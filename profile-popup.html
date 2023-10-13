@@ -40,20 +40,21 @@
                 line-height: var(--line-height);
             }
 
+            .profile__url {
+                display: block;
+                margin-top: 8px;
+            }
+
             .flex-container.profile__flex-container {
                 flex-direction: column;
                 gap: 8px;
-                margin-top: 8px;
+                margin-top: 20px;
                 margin-bottom: 20px;
             }
 
             .profile__flex-container .profile__info {
                 font-weight: 600;
                 margin-bottom: 0;
-            }
-
-            .profile__tags-container {
-                margin-bottom: 20px;
             }
         </style>
     </head>
@@ -111,6 +112,8 @@
                             </div>
                             <span class="profile__username">@john_doe</span>
 
+                            <a href="#" class="profile__url">www.example.com</a>
+
                             <div class="flex-container profile__flex-container">
                                 <p class="profile__info">
                                     Age:
@@ -140,8 +143,6 @@
                                 <span class="profile__tag">Tag3</span>,
                                 <span class="profile__tag">Tag4</span>
                             </div>
-
-                            <a href="#" class="profile__url">www.example.com</a>
                         </section>
                     </div>
                 </div>
