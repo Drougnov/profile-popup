@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://fs.codelinden.com/wp-content/themes/hello-child/style.css"
+        />
+        <script src="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/js/popup-scripts.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://fs.codelinden.com/wp-content/plugins/fansocial/assets/css/popup-styles.css"
+        />
+
+        <title>Profile popup</title>
+
+        <style>
+            .profile-popup .GodhZ {
+                padding: 50px;
+            }
+
+            .profile-popup .profile__img-container {
+                width: 100%;
+                height: 100%;
+                max-height: 250px;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+
+            .profile__img-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .profile__name-container {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .profile__name {
+                margin-bottom: 8px;
+            }
+
+            .profile__username {
+                color: gray;
+            }
+
+            .flex-container.profile__flex-container {
+                flex-direction: column;
+                gap: 8px;
+                margin-top: 8px;
+                margin-bottom: 20px;
+            }
+
+            .profile__flex-container .profile__info {
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <button
+            onclick="initiate_popup({'target': '#profile-popup', 'overlay_color': 'rgb(0 170 255 / 58%)'});"
+        >
+            Show/Hide profile Popup
+        </button>
+        <!-- outer wrapper -->
+        <div class="DuKSh EJVsl OtrSK cNGwx profile-popup" id="profile-popup">
+            <!-- inner wrapper -->
+            <div class="GodhZ gsCWf EJVsl OtrSK CzomY">
+                <!-- container -->
+                <div class="ExGby HruDj">
+                    <!-- header -->
+                    <div class="tSrNa gsCWf EJVsl zsSLy">
+                        <h1 class="USKIn">Profile</h1>
+
+                        <!-- header right section -->
+                        <div class="wcrwV gsCWf EJVsl">
+                            <!-- close button -->
+                            <div
+                                class="AYaOY TNIio UYvZu gsCWf EJVsl OtrSK DeYlt"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g>
+                                        <path
+                                            d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16"
+                                            stroke="#000000"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        ></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- contents -->
+                    <div class="TImJU">
+                        <section class="profile-wrapper">
+                            <div class="profile__img-container">
+                                <img
+                                    src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="profile__name-container">
+                                <h1 class="profile__name">John Doe</h1>
+                                <span class="profile__username">@john_doe</span>
+                            </div>
+
+                            <div class="flex-container profile__flex-container">
+                                <p class="profile__info">
+                                    Age:
+                                    <span class="profile__age">21</span>
+                                </p>
+                                <p class="profile__info">
+                                    Gender:
+                                    <span class="profile__gender">Male</span>
+                                </p>
+                                <p class="profile__info">
+                                    Country:
+                                    <span class="profile__country">Peru</span>
+                                </p>
+                            </div>
+
+                            <p class="profile__bio">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Necessitatibus libero nesciunt
+                                provident enim cum rerum a placeat neque atque!
+                                Et eligendi voluptatum saepe debitis blanditiis
+                                earum? Saepe dolorum non quam.
+                            </p>
+
+                            <div class="profile__tags-container">
+                                <span class="profile__tag">Tag1</span>,
+                                <span class="profile__tag">Tag2</span>,
+                                <span class="profile__tag">Tag3</span>,
+                                <span class="profile__tag">Tag4</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
