@@ -35,18 +35,9 @@
                 object-fit: cover;
             }
 
-            .profile__name-container {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-            }
-
-            .profile__name {
-                margin-bottom: 8px;
-            }
-
             .profile__username {
                 color: gray;
+                line-height: var(--line-height);
             }
 
             .flex-container.profile__flex-container {
@@ -59,6 +50,10 @@
             .profile__flex-container .profile__info {
                 font-weight: 600;
                 margin-bottom: 0;
+            }
+
+            .profile__tags-container {
+                margin-bottom: 20px;
             }
         </style>
     </head>
@@ -76,7 +71,7 @@
                 <div class="ExGby HruDj">
                     <!-- header -->
                     <div class="tSrNa gsCWf EJVsl zsSLy">
-                        <h1 class="USKIn">Profile</h1>
+                        <h1 class="USKIn">John Doe</h1>
 
                         <!-- header right section -->
                         <div class="wcrwV gsCWf EJVsl">
@@ -114,10 +109,7 @@
                                     alt=""
                                 />
                             </div>
-                            <div class="profile__name-container">
-                                <h1 class="profile__name">John Doe</h1>
-                                <span class="profile__username">@john_doe</span>
-                            </div>
+                            <span class="profile__username">@john_doe</span>
 
                             <div class="flex-container profile__flex-container">
                                 <p class="profile__info">
@@ -148,6 +140,8 @@
                                 <span class="profile__tag">Tag3</span>,
                                 <span class="profile__tag">Tag4</span>
                             </div>
+
+                            <a href="#" class="profile__url">www.example.com</a>
                         </section>
                     </div>
                 </div>
